@@ -513,7 +513,7 @@ If omitted, will use the value specified by `ssl_verify_depth`.
 
 Returns `true` on success, or a `nil` value and a string describing the error otherwise.
 
-Note that TLS is not terminated when verification fails. You need to examine Nginx variable `$ssl_client_verify`
+Note that the TLS handshake is not rejected when verification fails. You need to examine Nginx variable `$ssl_client_verify`
 later to determine next steps.
 
 This function was first added in version `0.1.20`.
